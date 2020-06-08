@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 //using UnityEngine.UI; ia tot ce trebuie din canvas
 
-public class GemSilver : MonoBehaviour
+public class GemGreen : MonoBehaviour
 {
     //ads score to silver gem
     public GameObject scoreBox;
@@ -13,7 +13,7 @@ public class GemSilver : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        GlobalScore.currentScore += 1000;
+        GlobalScore.currentScore += 500;
         collectSound.Play();
         Destroy(gameObject);
     }

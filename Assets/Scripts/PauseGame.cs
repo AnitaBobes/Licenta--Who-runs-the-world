@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PauseGame : MonoBehaviour
     public bool gamePaused = false;
     public AudioSource levelMusic;
     public GameObject pauseMenu;
+    public AudioSource pauseJingle;
 
     void Update()
     {
@@ -20,6 +22,8 @@ public class PauseGame : MonoBehaviour
             if(gamePaused == false)
             {
                 //unity is always running on timeScale=1 , that is real time. If we set it to 0, it will freeze. s is doulble fast and so on
+                //press escape => pause the game
+                pauseJingle.Play();
                 Time.timeScale = 0;
                 gamePaused = true;
                 Cursor.visible = true;
@@ -29,6 +33,7 @@ public class PauseGame : MonoBehaviour
 
             else
             {
+                //press escape again to unpause the game
                 pauseMenu.SetActive(false);
                 levelMusic.UnPause();
                 Cursor.visible = false;
@@ -37,4 +42,34 @@ public class PauseGame : MonoBehaviour
             }
         }
     }
+
+    public void ResumeGame()
+    {
+        pauseMenu.SetActive(false);
+        levelMusic.UnPause();
+        Cursor.visible = false;
+        gamePaused = false;
+        Time.timeScale = 1;
+    }
+
+    public void RestartLevel()
+    {
+        pauseMenu.SetActive(false);
+        levelMusic.UnPause();
+        Cursor.visible = false;
+        gamePaused = false;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(2);
+    }
+
+    public void QuitToMenu()
+    {
+        pauseMenu.SetActive(false);
+        levelMusic.UnPause();
+        Cursor.visible = false;
+        gamePaused = false;
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
+    }
+
 }

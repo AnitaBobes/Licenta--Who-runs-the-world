@@ -10,6 +10,7 @@ public class RedirectToLevel : MonoBehaviour
 
     //variable that determines what level I want to go to
     public static int redirectToLevel;
+    public static int nextLevel;
    
     
     void Update()

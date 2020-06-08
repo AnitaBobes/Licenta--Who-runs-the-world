@@ -22,8 +22,10 @@ public class LevelDeath : MonoBehaviour
         levelAudio.SetActive(false);
         yield return new WaitForSeconds(2);
         fadeOut.SetActive(true);
-        yield return new WaitForSeconds(1); //explicat la 2:19:00
+        yield return new WaitForSeconds(1); //explicat la 2:19:00 
         //when our character colides with this object we need to go to RedirectLevel(scene 0)
-        SceneManager.LoadScene(2);
+        //dupa asta zice you fell off
+        GlobalScore.currentScore = 0;
+        SceneManager.LoadScene(RedirectToLevel.redirectToLevel);
     }
 }
