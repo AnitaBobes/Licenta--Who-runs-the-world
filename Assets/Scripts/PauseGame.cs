@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PauseGame : MonoBehaviour
 {
     // Check if the game is paused and then pause the player
+    //3:26 incepe pause panel menu
 
     public bool gamePaused = false;
     public AudioSource levelMusic;
@@ -59,7 +60,7 @@ public class PauseGame : MonoBehaviour
         Cursor.visible = false;
         gamePaused = false;
         Time.timeScale = 1;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     public void QuitToMenu()

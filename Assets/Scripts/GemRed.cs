@@ -13,7 +13,7 @@ public class GemRed : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        GlobalScore.currentScore += 250;
+        GlobalScore.currentScore += 200;
         collectSound.Play();
         Destroy(gameObject);
     }

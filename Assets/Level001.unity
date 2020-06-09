@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.2900055, g: 0.23908398, b: 0.18980858, a: 1}
+  m_IndirectSpecularColor: {r: 0.22694075, g: 0.1827217, b: 0.13905734, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1366,7 +1366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 79674db77adfc4d6f9f17fb043493b1e, type: 3}
       propertyPath: field of view
-      value: 34.3423
+      value: 63.1
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 79674db77adfc4d6f9f17fb043493b1e, type: 3}
       propertyPath: orthographic
@@ -1382,7 +1382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: 79674db77adfc4d6f9f17fb043493b1e, type: 3}
       propertyPath: m_FocalLength
-      value: 38.83495
+      value: 19.543917
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79674db77adfc4d6f9f17fb043493b1e, type: 3}
@@ -7136,7 +7136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theLedge: {fileID: 289358268}
   thePlayer: {fileID: 616650705}
-  theRedGem: {fileID: 733935043}
 --- !u!1 &1822615188
 GameObject:
   m_ObjectHideFlags: 0
