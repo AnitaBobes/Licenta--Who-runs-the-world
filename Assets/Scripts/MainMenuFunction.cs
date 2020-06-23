@@ -11,6 +11,9 @@ public class MainMenuFunction : MonoBehaviour
     public AudioSource buttonPress;
     public int bestScore;
     public GameObject bestScoreDisplay;
+    public static int lifes = 0;
+    //public static int timer0 = 0;
+    //public static int timer1 = 0;
 
     void Start()
     {
@@ -24,8 +27,11 @@ public class MainMenuFunction : MonoBehaviour
     public void PlayGame()
     {
         buttonPress.Play();
-        RedirectToLevel.redirectToLevel = 3;
-        SceneManager.LoadScene(2);
+        lifes = 3;
+        //timer0 = 25;
+        //timer1 = 25;
+        //RedirectToLevel.redirectToLevel = 3;
+        SceneManager.LoadScene(3);
     }
 
     public void QuitGame()

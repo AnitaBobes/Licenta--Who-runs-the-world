@@ -60,7 +60,8 @@ public class PauseGame : MonoBehaviour
         Cursor.visible = false;
         gamePaused = false;
         Time.timeScale = 1;
-        SceneManager.LoadScene(3);
+        // SceneManager.LoadScene(3);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void QuitToMenu()

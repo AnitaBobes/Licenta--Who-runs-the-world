@@ -80,6 +80,8 @@ namespace UnityChan
 		
 		
 			// 以下、キャラクターの移動処理
+
+			//remains turned to the selected direction when mooving
 			velocity = new Vector3 (0, 0, v);		// 上下のキー入力からZ軸方向の移動量を取得
 			// キャラクターのローカル空間での方向に変換
 			velocity = transform.TransformDirection (velocity);

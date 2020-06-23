@@ -16,8 +16,7 @@ public class PlatformGripper : MonoBehaviour
         //when we enter this trigger, the player becomes the child and the ledge becomes the parent so we need to make them both parents
 
         thePlayer.transform.parent = theLedge.transform;
-        //theRedGem.transform.parent = theLedge.transform;
-        //the parent for the player becomes the ledge
+       
 
     }
 
